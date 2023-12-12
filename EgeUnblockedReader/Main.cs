@@ -49,7 +49,7 @@ namespace EgeUnblockedReader
         private void DownloadList()
         {
             listBox1.Items.Clear();
-            wc.DownloadFile("https://imagedeliverynetwork--mimarselimbey.repl.co/unblock/unblocked-sites.txt", Path.Combine(tempPath, "egeunblock.txt"));
+            wc.DownloadFile("https://raw.githubusercontent.com/EmrEge12/EgeUnblockedReader/master/data/unblocked-sites.txt", Path.Combine(tempPath, "egeunblock.txt"));
             string[] read = File.ReadAllLines(Path.Combine(tempPath, "egeunblock.txt"));
             foreach (var readLine in read)
             {
@@ -60,7 +60,7 @@ namespace EgeUnblockedReader
         private void VersionCheck()
         {
 
-            wc.DownloadFile("https://imagedeliverynetwork--mimarselimbey.repl.co/unblock/unblocked-client-ver.txt", Path.Combine(tempPath, "egeunblock-ver.txt"));
+            wc.DownloadFile("https://raw.githubusercontent.com/EmrEge12/EgeUnblockedReader/master/data/unblocked-client-ver.txt", Path.Combine(tempPath, "egeunblock-ver.txt"));
             string latestVer = File.ReadAllText(Path.Combine(tempPath, "egeunblock-ver.txt"));
             if (latestVer[0] == version[0])
             {
