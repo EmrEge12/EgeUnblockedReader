@@ -39,9 +39,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 29);
+            this.label1.Size = new System.Drawing.Size(295, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ege Unblocked Reader v1.3.1 Hotfix 1";
+            this.label1.Text = "Ege Unblocked Reader v1";
             // 
             // label2
             // 
@@ -49,9 +49,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.Location = new System.Drawing.Point(14, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 20);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "By mimar.selim.bey";
+            this.label2.Text = "By EmrEge12";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1

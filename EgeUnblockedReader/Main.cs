@@ -11,7 +11,7 @@ namespace EgeUnblockedReader
     public partial class Main : Form
     {
         string tempPath = Path.GetTempPath();
-        string version = "v1.3.1h1";
+        string version = "v1.0";
         WebClient wc = new WebClient();
         public Main()
         {
