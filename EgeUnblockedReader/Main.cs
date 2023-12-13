@@ -68,9 +68,9 @@ namespace EgeUnblockedReader
                 {
                     if (MessageBox.Show("Engellenmemiş Site Okuyucusu Sürümü: " + latestVer + " Yayınlanmış,\nYeni sürümü indirmek ister misiniz?", "Güncelleme", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                     {
-                        wc.DownloadFile("https://imagedeliverynetwork--mimarselimbey.repl.co/unblock/ESIupdater.exe", Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "ESIupdater.exe"));
+                        wc.DownloadFile("https://raw.githubusercontent.com/EmrEge12/EgeUnblockedReader/master/data/EUBupdater.exe", Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe"));
                         ProcessStartInfo startInfo = new ProcessStartInfo();
-                        startInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "ESIupdater.exe");
+                        startInfo.FileName = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe");
                         startInfo.Arguments = Path.GetFileName(Assembly.GetEntryAssembly().Location);
                         Process.Start(startInfo);
                         Application.Exit();
@@ -88,9 +88,9 @@ namespace EgeUnblockedReader
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (File.Exists(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "ESIupdater.exe")))
+            if (File.Exists(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe")))
             {
-                File.Delete(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "ESIupdater.exe"));
+                File.Delete(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe"));
             }
             VersionCheck();
             listBox1.Items.Clear();
