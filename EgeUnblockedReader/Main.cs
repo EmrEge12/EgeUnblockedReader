@@ -13,6 +13,8 @@ namespace EgeUnblockedReader
         string tempPath = Path.GetTempPath();
         string version = "v1.0";
         WebClient wc = new WebClient();
+        
+
         public Main()
         {
             InitializeComponent();
@@ -51,6 +53,7 @@ namespace EgeUnblockedReader
             listBox1.Items.Clear();
             wc.DownloadFile("https://raw.githubusercontent.com/EmrEge12/EgeUnblockedReader/master/data/unblocked-sites.txt", Path.Combine(tempPath, "egeunblock.txt"));
             string[] read = File.ReadAllLines(Path.Combine(tempPath, "egeunblock.txt"));
+            listBox1.Items.Clear();
             foreach (var readLine in read)
             {
                 listBox1.Items.Add(readLine);
@@ -88,6 +91,7 @@ namespace EgeUnblockedReader
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            wc.Headers.Add("User-Agent", "Mozilla/5.0 (Linux; U; Linux i563 ) AppleWebKit/601.48 (KHTML, like Gecko) Chrome/51.0.3629.220 Safari/537");
             if (File.Exists(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe")))
             {
                 File.Delete(Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe"));
@@ -97,12 +101,6 @@ namespace EgeUnblockedReader
             if (!File.Exists(Path.Combine(tempPath, "egeunblock.txt")))
             {
                 DownloadList();
-            }
-
-            string[] read = File.ReadAllLines(Path.Combine(tempPath, "egeunblock.txt"));
-            foreach (var readLine in read)
-            {
-                listBox1.Items.Add(readLine);
             }
         }
 
