@@ -98,10 +98,8 @@ namespace EgeUnblockedReader
             }
             VersionCheck();
             listBox1.Items.Clear();
-            if (!File.Exists(Path.Combine(tempPath, "egeunblock.txt")))
-            {
-                DownloadList();
-            }
+            DownloadList();
+
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
