@@ -50,6 +50,7 @@ namespace EgeUnblockedReader
             // 
             // btnAbout
             // 
+            this.btnAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAbout.Image = global::EgeUnblockedReader.Properties.Resources.Famfamfam_Mini_Icon_info_16;
             this.btnAbout.Location = new System.Drawing.Point(302, 12);
@@ -68,7 +69,7 @@ namespace EgeUnblockedReader
             this.btnOpenSelected.Name = "btnOpenSelected";
             this.btnOpenSelected.Size = new System.Drawing.Size(160, 36);
             this.btnOpenSelected.TabIndex = 1;
-            this.btnOpenSelected.Text = "Seçilen Siteyi Aç";
+            this.btnOpenSelected.Text = "Open Selected";
             this.btnOpenSelected.UseVisualStyleBackColor = true;
             this.btnOpenSelected.Click += new System.EventHandler(this.btnOpenSelected_Click);
             // 
@@ -81,7 +82,7 @@ namespace EgeUnblockedReader
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(118, 36);
             this.btnRefresh.TabIndex = 0;
-            this.btnRefresh.Text = "Yenile";
+            this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -99,7 +100,7 @@ namespace EgeUnblockedReader
             this.MinimizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Engellenmemiş Site Okuyucusu";
+            this.Text = "Ege Unblocked Reader";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

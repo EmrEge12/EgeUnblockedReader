@@ -11,7 +11,7 @@ namespace EgeUnblockedReader
     public partial class Main : Form
     {
         string tempPath = Path.GetTempPath();
-        string version = "v1.0";
+        string version = "v1.01";
         WebClient wc = new WebClient();
         
 
@@ -45,7 +45,7 @@ namespace EgeUnblockedReader
             }
             else
             {
-                MessageBox.Show("Lütfen bir site seçiniz...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please select a website from the list...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         private void DownloadList()
@@ -69,7 +69,7 @@ namespace EgeUnblockedReader
             {
                 if (latestVer != version)
                 {
-                    if (MessageBox.Show("Engellenmemiş Site Okuyucusu Sürümü: " + latestVer + " Yayınlanmış,\nYeni sürümü indirmek ister misiniz?", "Güncelleme", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                    if (MessageBox.Show("New Unblocked Reader version " + latestVer + " is released,\nDo you want to update your installation?", "Update", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                     {
                         wc.DownloadFile("https://raw.githubusercontent.com/EmrEge12/EgeUnblockedReader/master/data/EUBupdater.exe", Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "EUBupdater.exe"));
                         ProcessStartInfo startInfo = new ProcessStartInfo();
