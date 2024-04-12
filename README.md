@@ -6,7 +6,7 @@ An unblocked game site reader for school computers and smartboards
   EgeUnblockedReader.exe
 ```
 
-* Debian (Ubuntu, Linux Mint etc.)
+* Linux (Debian, Ubuntu, Linux Mint etc.)
 
 ```
   sudo apt install mono-complete
