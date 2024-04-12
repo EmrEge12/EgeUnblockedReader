@@ -39,9 +39,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 29);
+            this.label1.Size = new System.Drawing.Size(327, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ege Unblocked Reader v1";
+            this.label1.Text = "Ege Unblocked Reader v1.01";
             // 
             // label2
             // 
